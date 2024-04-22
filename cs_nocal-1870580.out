@@ -1,0 +1,389 @@
+Mon 22 Apr 2024 06:32:06 PM EDT
+[0] /lustre/orion/proj-shared/geo156/pmaech/scratch/TARGET_UCVM_SFCVM/ucvm_install/bin/ucvm2mesh_mpi Version: 22.7.0
+[0] Running on 64 cores
+[0] Using config file ./norcal_ucvm2mesh.conf
+[0] Configuration:
+	[0] UCVM Model List: sfcvm,cca,bbp1d
+	[0] UCVM Conf file: /lustre/orion/proj-shared/geo156/pmaech/scratch/TARGET_UCVM_SFCVM/ucvm_install/conf/ucvm.conf
+	[0] Gridtype: 0
+	[0] Querymode: 0
+	[0] Spacing: 1000.000000
+	[0] Projection: +proj=utm +datum=WGS84 +zone=10
+		[0] Rotation Angle: -53.900000
+		[0] Origin x0,y0,z0: -121.900000, 36.300000, 0.000000
+		[0] Dimensions: 300, 140, 52
+	[0] Proc Dimensions: 4, 4, 4
+	[0] Vp Min: 0.000000, Vs Min: 0.000000
+	[0] Mesh File: /lustre/orion/scratch/pmaech/geo156/mesh_sfbr_ijk12_1000m.media
+	[0] Grid File: //lustre/orion/scratch/pmaech/geo156/mesh_sfbr_ijk12_1000m.grid
+	[0] Mesh Type: 1
+	[0] Scratch Dir: /lustre/orion/scratch/pmaech/geo156
+[0] Initialization complete
+[0] Converting grid to latlong
+[0] Grid generation complete
+[0] Configuring UCVM
+[0] Opening output mesh file /lustre/orion/scratch/pmaech/geo156/mesh_sfbr_ijk12_1000m.media
+[0] MPI/IO collective IO is disabled
+[0] Partition file type size: 409500 bytes
+[0] Allocating 2625 grid points
+[0] Partition dimensions: 75 x 35 x 13
+[0] I,J,K start: 0, 0, 0
+[0] I,J,K end: 75, 35, 13
+[62] Allocating 2625 grid points
+[62] Partition dimensions: 75 x 35 x 13
+[62] I,J,K start: 150, 105, 39
+[62] I,J,K end: 225, 140, 52
+[34] Allocating 2625 grid points
+[34] Partition dimensions: 75 x 35 x 13
+[34] I,J,K start: 150, 0, 26
+[34] I,J,K end: 225, 35, 39
+[39] Allocating 2625 grid points
+[39] Partition dimensions: 75 x 35 x 13
+[39] I,J,K start: 225, 35, 26
+[39] I,J,K end: 300, 70, 39
+[1] Allocating 2625 grid points
+[1] Partition dimensions: 75 x 35 x 13
+[1] I,J,K start: 75, 0, 0
+[1] I,J,K end: 150, 35, 13
+[57] Allocating 2625 grid points
+[57] Partition dimensions: 75 x 35 x 13
+[57] I,J,K start: 75, 70, 39
+[57] I,J,K end: 150, 105, 52
+[58] Allocating 2625 grid points
+[58] Partition dimensions: 75 x 35 x 13
+[58] I,J,K start: 150, 70, 39
+[58] I,J,K end: 225, 105, 52
+[5] Allocating 2625 grid points
+[5] Partition dimensions: 75 x 35 x 13
+[5] I,J,K start: 75, 35, 0
+[5] I,J,K end: 150, 70, 13
+[33] Allocating 2625 grid points
+[33] Partition dimensions: 75 x 35 x 13
+[33] I,J,K start: 75, 0, 26
+[33] I,J,K end: 150, 35, 39
+[8] Allocating 2625 grid points
+[8] Partition dimensions: 75 x 35 x 13
+[8] I,J,K start: 0, 70, 0
+[8] I,J,K end: 75, 105, 13
+[36] Allocating 2625 grid points
+[36] Partition dimensions: 75 x 35 x 13
+[36] I,J,K start: 0, 35, 26
+[36] I,J,K end: 75, 70, 39
+[9] Allocating 2625 grid points
+[9] Partition dimensions: 75 x 35 x 13
+[9] I,J,K start: 75, 70, 0
+[9] I,J,K end: 150, 105, 13
+[41] Allocating 2625 grid points
+[41] Partition dimensions: 75 x 35 x 13
+[41] I,J,K start: 75, 70, 26
+[41] I,J,K end: 150, 105, 39
+[16] Allocating 2625 grid points
+[16] Partition dimensions: 75 x 35 x 13
+[16] I,J,K start: 0, 0, 13
+[16] I,J,K end: 75, 35, 26
+[43] Allocating 2625 grid points
+[43] Partition dimensions: 75 x 35 x 13
+[43] I,J,K start: 225, 70, 26
+[43] I,J,K end: 300, 105, 39
+[24] Allocating 2625 grid points
+[24] Partition dimensions: 75 x 35 x 13
+[24] I,J,K start: 0, 70, 13
+[24] I,J,K end: 75, 105, 26
+[44] Allocating 2625 grid points
+[44] Partition dimensions: 75 x 35 x 13
+[44] I,J,K start: 0, 105, 26
+[44] I,J,K end: 75, 140, 39
+[28] Allocating 2625 grid points
+[28] Partition dimensions: 75 x 35 x 13
+[28] I,J,K start: 0, 105, 13
+[28] I,J,K end: 75, 140, 26
+[46] Allocating 2625 grid points
+[46] Partition dimensions: 75 x 35 x 13
+[46] I,J,K start: 150, 105, 26
+[46] I,J,K end: 225, 140, 39
+[2] Allocating 2625 grid points
+[2] Partition dimensions: 75 x 35 x 13
+[2] I,J,K start: 150, 0, 0
+[2] I,J,K end: 225, 35, 13
+[47] Allocating 2625 grid points
+[47] Partition dimensions: 75 x 35 x 13
+[47] I,J,K start: 225, 105, 26
+[47] I,J,K end: 300, 140, 39
+[3] Allocating 2625 grid points
+[3] Partition dimensions: 75 x 35 x 13
+[3] I,J,K start: 225, 0, 0
+[3] I,J,K end: 300, 35, 13
+[48] Allocating 2625 grid points
+[48] Partition dimensions: 75 x 35 x 13
+[48] I,J,K start: 0, 0, 39
+[48] I,J,K end: 75, 35, 52
+[4] Allocating 2625 grid points
+[4] Partition dimensions: 75 x 35 x 13
+[4] I,J,K start: 0, 35, 0
+[4] I,J,K end: 75, 70, 13
+[50] Allocating 2625 grid points
+[50] Partition dimensions: 75 x 35 x 13
+[50] I,J,K start: 150, 0, 39
+[50] I,J,K end: 225, 35, 52
+[6] Allocating 2625 grid points
+[6] Partition dimensions: 75 x 35 x 13
+[6] I,J,K start: 150, 35, 0
+[6] I,J,K end: 225, 70, 13
+[51] Allocating 2625 grid points
+[51] Partition dimensions: 75 x 35 x 13
+[51] I,J,K start: 225, 0, 39
+[51] I,J,K end: 300, 35, 52
+[7] Allocating 2625 grid points
+[7] Partition dimensions: 75 x 35 x 13
+[7] I,J,K start: 225, 35, 0
+[7] I,J,K end: 300, 70, 13
+[60] Allocating 2625 grid points
+[60] Partition dimensions: 75 x 35 x 13
+[60] I,J,K start: 0, 105, 39
+[60] I,J,K end: 75, 140, 52
+[10] Allocating 2625 grid points
+[10] Partition dimensions: 75 x 35 x 13
+[10] I,J,K start: 150, 70, 0
+[10] I,J,K end: 225, 105, 13
+[32] Allocating 2625 grid points
+[32] Partition dimensions: 75 x 35 x 13
+[32] I,J,K start: 0, 0, 26
+[32] I,J,K end: 75, 35, 39
+[35] Allocating 2625 grid points
+[35] Partition dimensions: 75 x 35 x 13
+[35] I,J,K start: 225, 0, 26
+[35] I,J,K end: 300, 35, 39
+[11] Allocating 2625 grid points
+[11] Partition dimensions: 75 x 35 x 13
+[11] I,J,K start: 225, 70, 0
+[11] I,J,K end: 300, 105, 13
+[37] Allocating 2625 grid points
+[37] Partition dimensions: 75 x 35 x 13
+[37] I,J,K start: 75, 35, 26
+[37] I,J,K end: 150, 70, 39
+[38] Allocating 2625 grid points
+[38] Partition dimensions: 75 x 35 x 13
+[38] I,J,K start: 150, 35, 26
+[38] I,J,K end: 225, 70, 39
+[12] Allocating 2625 grid points
+[12] Partition dimensions: 75 x 35 x 13
+[12] I,J,K start: 0, 105, 0
+[12] I,J,K end: 75, 140, 13
+[40] Allocating 2625 grid points
+[40] Partition dimensions: 75 x 35 x 13
+[40] I,J,K start: 0, 70, 26
+[40] I,J,K end: 75, 105, 39
+[13] Allocating 2625 grid points
+[13] Partition dimensions: 75 x 35 x 13
+[13] I,J,K start: 75, 105, 0
+[13] I,J,K end: 150, 140, 13
+[14] Allocating 2625 grid points
+[14] Partition dimensions: 75 x 35 x 13
+[14] I,J,K start: 150, 105, 0
+[14] I,J,K end: 225, 140, 13
+[42] Allocating 2625 grid points
+[42] Partition dimensions: 75 x 35 x 13
+[42] I,J,K start: 150, 70, 26
+[42] I,J,K end: 225, 105, 39
+[15] Allocating 2625 grid points
+[15] Partition dimensions: 75 x 35 x 13
+[15] I,J,K start: 225, 105, 0
+[15] I,J,K end: 300, 140, 13
+[45] Allocating 2625 grid points
+[45] Partition dimensions: 75 x 35 x 13
+[45] I,J,K start: 75, 105, 26
+[45] I,J,K end: 150, 140, 39
+[17] Allocating 2625 grid points
+[17] Partition dimensions: 75 x 35 x 13
+[17] I,J,K start: 75, 0, 13
+[17] I,J,K end: 150, 35, 26
+[49] Allocating 2625 grid points
+[49] Partition dimensions: 75 x 35 x 13
+[49] I,J,K start: 75, 0, 39
+[49] I,J,K end: 150, 35, 52
+[18] Allocating 2625 grid points
+[18] Partition dimensions: 75 x 35 x 13
+[18] I,J,K start: 150, 0, 13
+[18] I,J,K end: 225, 35, 26
+[52] Allocating 2625 grid points
+[52] Partition dimensions: 75 x 35 x 13
+[52] I,J,K start: 0, 35, 39
+[52] I,J,K end: 75, 70, 52
+[19] Allocating 2625 grid points
+[19] Partition dimensions: 75 x 35 x 13
+[19] I,J,K start: 225, 0, 13
+[19] I,J,K end: 300, 35, 26
+[53] Allocating 2625 grid points
+[53] Partition dimensions: 75 x 35 x 13
+[53] I,J,K start: 75, 35, 39
+[53] I,J,K end: 150, 70, 52
+[20] Allocating 2625 grid points
+[20] Partition dimensions: 75 x 35 x 13
+[20] I,J,K start: 0, 35, 13
+[20] I,J,K end: 75, 70, 26
+[54] Allocating 2625 grid points
+[54] Partition dimensions: 75 x 35 x 13
+[54] I,J,K start: 150, 35, 39
+[54] I,J,K end: 225, 70, 52
+[21] Allocating 2625 grid points
+[21] Partition dimensions: 75 x 35 x 13
+[21] I,J,K start: 75, 35, 13
+[21] I,J,K end: 150, 70, 26
+[22] Allocating 2625 grid points
+[22] Partition dimensions: 75 x 35 x 13
+[22] I,J,K start: 150, 35, 13
+[22] I,J,K end: 225, 70, 26
+[23] Allocating 2625 grid points
+[23] Partition dimensions: 75 x 35 x 13
+[23] I,J,K start: 225, 35, 13
+[23] I,J,K end: 300, 70, 26
+[55] Allocating 2625 grid points
+[55] Partition dimensions: 75 x 35 x 13
+[55] I,J,K start: 225, 35, 39
+[55] I,J,K end: 300, 70, 52
+[25] Allocating 2625 grid points
+[25] Partition dimensions: 75 x 35 x 13
+[25] I,J,K start: 75, 70, 13
+[25] I,J,K end: 150, 105, 26
+[56] Allocating 2625 grid points
+[56] Partition dimensions: 75 x 35 x 13
+[56] I,J,K start: 0, 70, 39
+[56] I,J,K end: 75, 105, 52
+[26] Allocating 2625 grid points
+[26] Partition dimensions: 75 x 35 x 13
+[26] I,J,K start: 150, 70, 13
+[26] I,J,K end: 225, 105, 26
+[59] Allocating 2625 grid points
+[59] Partition dimensions: 75 x 35 x 13
+[59] I,J,K start: 225, 70, 39
+[59] I,J,K end: 300, 105, 52
+[27] Allocating 2625 grid points
+[27] Partition dimensions: 75 x 35 x 13
+[27] I,J,K start: 225, 70, 13
+[27] I,J,K end: 300, 105, 26
+[61] Allocating 2625 grid points
+[61] Partition dimensions: 75 x 35 x 13
+[61] I,J,K start: 75, 105, 39
+[61] I,J,K end: 150, 140, 52
+[29] Allocating 2625 grid points
+[29] Partition dimensions: 75 x 35 x 13
+[29] I,J,K start: 75, 105, 13
+[29] I,J,K end: 150, 140, 26
+[63] Allocating 2625 grid points
+[63] Partition dimensions: 75 x 35 x 13
+[63] I,J,K start: 225, 105, 39
+[63] I,J,K end: 300, 140, 52
+[30] Allocating 2625 grid points
+[30] Partition dimensions: 75 x 35 x 13
+[30] I,J,K start: 150, 105, 13
+[30] I,J,K end: 225, 140, 26
+[31] Allocating 2625 grid points
+[31] Partition dimensions: 75 x 35 x 13
+[31] I,J,K start: 225, 105, 13
+[31] I,J,K end: 300, 140, 26
+[59] Extracted 34125 points
+[58] Extracted 34125 points
+[14] Extracted 34125 points
+[42] Extracted 34125 points
+[43] Extracted 34125 points
+[10] Extracted 34125 points
+[11] Extracted 34125 points
+[62] Extracted 34125 points
+[15] Extracted 34125 points
+[63] Extracted 34125 points
+[47] Extracted 34125 points
+[7] Extracted 34125 points
+[6] Extracted 34125 points
+[46] Extracted 34125 points
+[23] Extracted 34125 points
+[55] Extracted 34125 points
+[54] Extracted 34125 points
+[22] Extracted 34125 points
+[2] Extracted 34125 points
+[26] Extracted 34125 points
+[30] Extracted 34125 points
+[27] Extracted 34125 points
+[38] Extracted 34125 points
+[39] Extracted 34125 points
+[18] Extracted 34125 points
+[50] Extracted 34125 points
+[31] Extracted 34125 points
+[34] Extracted 34125 points
+[3] Extracted 34125 points
+[51] Extracted 34125 points
+[19] Extracted 34125 points
+[35] Extracted 34125 points
+[21] Extracted 34125 points
+[37] Extracted 34125 points
+[29] Extracted 34125 points
+[45] Extracted 34125 points
+[25] Extracted 34125 points
+[17] Extracted 34125 points
+[41] Extracted 34125 points
+[33] Extracted 34125 points
+[0] Starting extraction
+[0] Extracted slice 0 (2625 pnts) in 9310.52 ms, 281.939148 pps
+[0] Wrote slice 0 (2625 pnts) in 1.00 ms, 2622377.500000 pps
+[0] Extracted slice 1 (2625 pnts) in 8923.38 ms, 294.171143 pps
+[0] Wrote slice 1 (2625 pnts) in 0.49 ms, 5401234.500000 pps
+[0] Extracted slice 2 (2625 pnts) in 8918.96 ms, 294.316864 pps
+[0] Wrote slice 2 (2625 pnts) in 0.48 ms, 5514706.000000 pps
+[0] Extracted slice 3 (2625 pnts) in 8917.80 ms, 294.355042 pps
+[0] Wrote slice 3 (2625 pnts) in 0.94 ms, 2801494.250000 pps
+[0] Extracted slice 4 (2625 pnts) in 8898.32 ms, 294.999634 pps
+[0] Wrote slice 4 (2625 pnts) in 0.93 ms, 2822580.750000 pps
+[0] Extracted slice 5 (2625 pnts) in 8896.77 ms, 295.051025 pps
+[0] Wrote slice 5 (2625 pnts) in 0.44 ms, 5979499.000000 pps
+[0] Extracted slice 6 (2625 pnts) in 8899.33 ms, 294.966034 pps
+[0] Wrote slice 6 (2625 pnts) in 0.96 ms, 2740083.500000 pps
+[0] Extracted slice 7 (2625 pnts) in 8895.33 ms, 295.098663 pps
+[0] Wrote slice 7 (2625 pnts) in 0.70 ms, 3733997.250000 pps
+[0] Extracted slice 8 (2625 pnts) in 8868.66 ms, 295.986176 pps
+[0] Wrote slice 8 (2625 pnts) in 0.47 ms, 5645161.500000 pps
+[28] Extracted 34125 points
+[44] Extracted 34125 points
+[0] Extracted slice 9 (2625 pnts) in 8869.82 ms, 295.947327 pps
+[0] Wrote slice 9 (2625 pnts) in 0.72 ms, 3625690.500000 pps
+[24] Extracted 34125 points
+[40] Extracted 34125 points
+[20] Extracted 34125 points
+[36] Extracted 34125 points
+[16] Extracted 34125 points
+[32] Extracted 34125 points
+[1] Extracted 34125 points
+[13] Extracted 34125 points
+[9] Extracted 34125 points
+[5] Extracted 34125 points
+[61] Extracted 34125 points
+[53] Extracted 34125 points
+[57] Extracted 34125 points
+[49] Extracted 34125 points
+[0] Extracted slice 10 (2625 pnts) in 160580.05 ms, 16.346987 pps
+[0] Wrote slice 10 (2625 pnts) in 0.94 ms, 2792553.250000 pps
+[0] Extracted slice 11 (2625 pnts) in 6964.40 ms, 376.917175 pps
+[0] Wrote slice 11 (2625 pnts) in 0.95 ms, 2748691.000000 pps
+[12] Extracted 34125 points
+[0] Extracted slice 12 (2625 pnts) in 6962.67 ms, 377.010315 pps
+[0] Wrote slice 12 (2625 pnts) in 0.45 ms, 5898876.500000 pps
+[0] Extracted 34125 points
+[4] Extracted 34125 points
+[8] Extracted 34125 points
+[60] Extracted 34125 points
+[56] Extracted 34125 points
+[52] Extracted 34125 points
+[48] Extracted 34125 points
+[0] Max Vp: 8450.478516 at
+[0]	i,j,k : 164, 74, 48
+[0] Max Vs: 5026.949219 at
+[0]	i,j,k : 252, 114, 31
+[0] Max Rho: 3455.773193 at
+[0]	i,j,k : 252, 114, 31
+[0] Min Vp: 718.195862 at
+[0]	i,j,k : 0, 43, 0
+[0] Min Vs: 84.268852 at
+[0]	i,j,k : 0, 43, 0
+[0] Min Rho: 1600.008789 at
+[0]	i,j,k : 0, 43, 0
+[0] Min Ratio: 1.493284 at
+[0]	i,j,k : 274, 124, 0
+Mon 22 Apr 2024 06:40:19 PM EDT

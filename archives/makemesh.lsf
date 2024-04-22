@@ -1,0 +1,21 @@
+#!/bin/bash
+#BSUB -P geo112
+#BSUB -W 1:00
+#BSUB -nnodes 1
+#BSUB -J MakeMesh
+#BSUB -o MakeMesh.%J
+#BSUM -e MakeMesh.%J
+#BSUM -u maechlin@usc.edu
+
+##
+## -n 8 Number of resource sets
+## -a 1 Number of tasks per resource set
+## -c 1 cores per resource set
+## -r 1 number of resource sets per host(node)
+## -B send me email when job starts
+## -N send me email when job ends
+## 
+cd $MEMBERWORK/geo112
+date
+jsrun -n 1 -a 8 -c 8 -r 1 $WORLDWORK/geo112/pmaech/ucvm-19.4.0/bin/ucvm2mesh_mpi -f $HOME/test_ucvm/ucvm2mesh.conf
+date

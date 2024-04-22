@@ -1,0 +1,23 @@
+#!/bin/bash
+#BSUB -P geo112
+#BSUB -W 4:00
+#BSUB -nnodes 149
+#BSUB -J LaHabra20mMesh
+#BSUB -o LaHabra20mMesh.%J
+#BSUB -e LaHabra20mMesh.%J
+#BSUB -u maechlin@usc.edu
+#BSUB -N
+##
+## --np number of tasks to start, one per cpu
+##  6250 tasks/42 cores per node = 148.8 rounded up to 149
+## -n x Number of resource sets
+## -a 1 Number of tasks per resource set
+## -c 1 cores per resource set
+## -r 1 number of resource sets per host(node)
+## -B send me email when job starts
+## -N send me email when job ends
+## 
+cd $MEMBERWORK/geo112
+date
+jsrun -n 6250 $WORLDWORK/geo112/pmaech/ucvm-19.4.0/bin/ucvm2mesh_mpi -f $HOME/test_ucvm/lahabra_ucvm2mesh.conf
+date
