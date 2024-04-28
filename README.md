@@ -1,12 +1,12 @@
-README.md
+## README.md
 
 ## Overview of UCVM Mesh Scripts for Frontier
 
 This contains scripts that will create ucvm meshes on Frontier.
 
-$sbatch makemesh.sh
-$sbatch make_lahabrah.sh
-$sbatch make_norcal.sh
+* $sbatch makemesh.sh
+* $sbatch make_lahabrah.sh
+* $sbatch make_norcal.sh
 
 ## makemesh.sh
 This is a single node job that queries cvmsi in southern California.
