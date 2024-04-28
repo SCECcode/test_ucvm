@@ -2,13 +2,14 @@
 #SBATCH -A geo156
 #SBATCH -J cs_nocal
 #SBATCH -o %x-%j.out
-#SBATCH -t 2:00:00
+#SBATCH -t 4:00:00
 #SBATCH -p batch
-#SBATCH -N 32
+#SBATCH -N 100
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=maechlin@usc.edu
 
-date
+now=$(date)
+echo $now
 
 MEMBERWORK=/lustre/orion/scratch/pmaech/geo156
 PROJWORK=/lustre/orion/geo156/proj-shared
@@ -21,8 +22,10 @@ cd ${MEMBERWORK}/ucvm
 cp ${PROJWORK}/pmaech/test_ucvm/norcal_ucvm2mesh.conf ./norcal_ucvm2mesh.conf
 # -N --nodes= minimum nodes to assign
 # -n --ntasks= maximum number of tasks
-srun -N32 -n512 ${BIN_DIR}/ucvm2mesh_mpi -f ./norcal_ucvm2mesh.conf
-date
+srun -N100 -n1000 ${BIN_DIR}/ucvm2mesh_mpi -f ./norcal_ucvm2mesh.conf
+
+now=$(date)
+echo $now
 
 # ---ATCH -N 8
 #srun -N8 -n512 block:cyclic ${BIN_DIR}/ucvm2mesh_mpi -f ./norcal_ucvm2mesh.conf
