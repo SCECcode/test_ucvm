@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH -A geo156
-#SBATCH -J nocal
-#SBATCH -o %x-%j.out
-#SBATCH -t 2:00:00
+#SBATCH -J cs_s3446
+#SBATCH -o %x-%j_s3446.out
+#SBATCH -t 4:00:00
 #SBATCH -p batch
-#SBATCH -N 108
+#SBATCH -N 115
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=maechlin@usc.edu
 
@@ -19,10 +19,10 @@ BIN_DIR=${UCVM_INSTALL_PATH}/bin
 CONF_DIR=${UCVM_INSTALL_PATH}/conf
 
 cd ${MEMBERWORK}/ucvm
-cp ${PROJWORK}/pmaech/test_ucvm/norcal_ucvm2mesh.conf ./norcal_ucvm2mesh.conf
+cp ${PROJWORK}/pmaech/test_ucvm/s3446_ucvm2mesh.conf ./s3446_ucvm2mesh.conf
 # -N --nodes= minimum nodes to assign
 # -n --ntasks= maximum number of tasks
-srun -N108 -n6000 ${BIN_DIR}/ucvm2mesh_mpi -f ./norcal_ucvm2mesh.conf
+srun -N115 -n6400 ${BIN_DIR}/ucvm2mesh_mpi -f ./s3446_ucvm2mesh.conf
 
 now=$(date)
 echo $now
